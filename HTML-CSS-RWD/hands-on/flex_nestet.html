@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nested flex</title>
+    <style>
+        body{
+            display: flex;
+            flex-wrap: wrap;    
+            border:2px black solid;
+        }
+        .container1 {
+            display: flex;
+            border: 5px solid red;     
+            flex-wrap: wrap;    
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+        }
+        .container2 {
+            display: flex;            
+            flex-wrap: wrap;
+            flex: 50px;
+        }
+
+        .div1 {
+            flex: 100px;
+            background-color: aqua;                        
+            margin: 20px;
+            
+        }
+
+        .div2 {
+            border: 2px solid black;
+            flex: 50px;
+            background-color:aqua;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="container2 ">
+            <div class="div1">aaa</div>
+            <div class="div1">aaa</div>
+            <div class="div1">aaa</div>
+        </div>
+    </div>
+    <div class="container1">
+            
+        </div>
+        <div class="container1">
+            
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
+            grid-template-rows: repeat(auto-fit,minmax(25%,1fr));
+        }
+        .box{
+            background-color:aqua; 
+        }
+        .box .box{
+            background-color:blanchedalmond; 
+        }
+        .g{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box" >A</div>
+        <div class="box" >B</div>
+        <div class="box" >C</div>
+        <div class="box" >D</div>
+        <div class="box" >E</div>
+        <div class="box " >F</div>
+        <div class="box g" >
+            <div class="box">G 1</div>
+            <div class="box">G 2</div>
+            <div class="box">G 3</div>
+            <div class="box">G 4</div>
+        </div>
+    </div>
+</body>
+</html>

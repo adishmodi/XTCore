@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0 auto;
+            padding: 0px;
+            font: 200%, "arial";
+        }
+
+        body {
+            background-color: brown;
+        }
+        .wrapper::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        .wrapper {
+            background-color: white;
+            width: 900px;
+            height: 100%;
+            margin: 0px auto;
+            border: 5px solid red;
+            padding: 5px;
+        }
+
+        .divchild {
+            width: 286px;
+            border: 2px solid black;
+            margin: 5px;
+            float: left;
+        }
+
+        img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        header {
+            height: 100px;
+            background-color: burlywood;
+        }
+
+        footer {
+            clear: both;
+            background-color: aqua;
+            height: 100px;
+        }
+
+        .colorRed {
+            background-color: red;
+        }
+
+        .colorBlue {
+            background-color: blue;
+        }
+
+        .colorPink {
+            background-color: pink;
+        }
+
+        p {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body class="wrapper">
+
+    <header>This is header section</header>
+    <div>
+        <div class="divchild colorRed">
+            <img src="bird.jpg">
+            <p>affsaflf slfjs ldfjlsa fadslf</p>
+        </div>
+        <div class="divchild colorBlue">
+            <img src="bird.jpg">
+            <p>affsaflf slfjs ldfjlsa fadslf affsaflf slfjs ldfjlsa fadslfaffsaflf slfjs ldfjlsa fadslfaffsaflf slfjs
+                ldfjlsa fadslfaffsaflf slfjs ldfjlsa fadslfaffsaflf slfjs ldfjlsa fadslfaffsaflf slfjs ldfjlsa
+                fadslfaffsaflf slfjs ldfjlsa fadslfaffsaflf slfjs ldfjlsa fadslf</p>
+        </div>
+        <div class="divchild colorPink">
+            <img src="bird.jpg">
+            <p>affsaflf slfjs ldfjlsa fadslf</p>
+        </div>
+    </div>
+    <footer>
+        <p>this is footer content</p>
+    </footer>
+</body>
+
+</html>

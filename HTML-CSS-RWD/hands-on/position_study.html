@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>case-study for position</title>
+    <style>
+        body {
+            width: 900px;
+            margin: 0 auto;
+            background-color: whitesmoke;
+        }
+
+        div {
+            width: 800px;
+            background-color:dodgerblue;
+            margin: 0 auto;
+        }
+
+        p {
+            /* background: gray; */
+            border: 3px solid aqua;
+            padding: 10px;
+            margin: 10px;
+            color: white;            
+        }
+
+        span {
+            font-size: 25px;
+            font: bold;
+        }
+
+        .positionedfor1 {
+            position: relative;
+            top: 19px;
+            left: -30px;
+            width: 700px;
+            height: 170px;
+            font-style: bold;
+            font-size: 20px;            
+        }
+        .positionedfor1Absolute{
+            position: absolute;
+            background-color: brown;
+            color: black;
+        }
+
+        .positionedfor3 {
+            position: relative;
+            top: -135px;
+            left: 290px;
+            width: 250px;
+        }
+
+        .positionedfor2 {
+            position: relative;
+            width: 250px;
+            top: -28px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Case study for positioning</h1>
+<div>
+<p class="positionedfor1">
+    <span>This is param header</span>
+    <br>
+    This is param 1
+    This is param 1
+    This is param 1This is param 1
+    This is param 1
+    This is param 1
+    This is param 1This is param 1
+    This is param 1
+    This is param 1
+    This is param 1This is param 1
+    This is param 1
+    This is param 1
+    This is param 1This is param 1
+    This is param 1
+    This is param 1
+    This is param 1
+
+</p>
+<p class="positionedfor2">
+    This is param 2
+    This is param 2
+    This is param 2
+    This is param 2
+    This is param 2
+    This is param 2
+    This is param 2
+    This is param 2
+</p>
+<p class="positionedfor3">
+    This is param 3
+    This is param 3
+    This is param 3
+    This is param 3
+    This is param 3
+    This is param 3
+    This is param 3
+    This is param 3
+</p>
+
+<p class="positionedfor1Absolute">
+    this is absolute position example
+</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        .divmain {
+            font-family: mallory, Helvetica Neue, Helvetica, Arial, sans-serif;
+            background-image: linear-gradient(to bottom, #f68a73, khaki);           
+            height: 650px;
+        }
+        .wrapper {
+            background-color: lightgrey;
+            padding: 10px;
+            color: brown;
+            display: flow-root;
+        }
+
+        .divchild {
+            width: 50%;
+            float: left;
+            color: white;
+        }
+
+        header {
+            font: bold;
+            height: 30px;
+        }
+
+        h1 {
+            width: 100%;
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
+        }
+
+        .section1 {
+            padding: 0px 50px 0px 50px;
+        }
+
+        .section2 {
+            padding: 0px 20px 0px 0px;
+        }
+
+        span {
+            margin: 10px;
+        }
+
+        .divInput {            
+            height: 75px;
+            background-color: white;
+            margin: auto;
+            display: block;
+            font-size: 25px;
+        }
+
+        input {
+            margin: 40px 0px 0px 50 px;
+        }
+
+        .box1 {
+            width: 48%;
+            height: 300px;
+            margin: 0px 10px 0px 0px;
+            float: left;
+            background-color: #0283df;
+            text-align: center;
+        }
+
+        .box2 {
+            width: 48%;
+            height: 300px;
+            margin: 0px 10px 0px 0px;
+            float: left;
+            background-color: peachpuff;
+            text-align: center;
+            color: #0a4867;
+        }
+
+        .box3 {
+
+            width: 97.5%;
+            height: 250px;
+            margin: 10px 0px 10px 0px;
+            float: left;
+            background-color: papayawhip;
+            text-align: center;
+            color: black;
+        }
+
+        .box1h1 {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+
+        .div_largetext {
+            font-size: 70px;
+        }
+
+        .p_title {
+            color: #18499a;
+
+            font-size: 16px;
+            margin: 0 2.5em 1.3em 2.5em;
+        }
+
+        .Tile__image {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin: 2px;
+        }
+
+        .Tile_button {
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-block;
+            text-align: center;
+            border-radius: 3px;
+            border-style: 1px solid #488bf8;
+            padding: .8em 1.2em;
+            color: #488bf8;
+            background-color: #fff;
+            margin-top: 11px;
+        }
+
+        .Tile_button1 {
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-block;
+            text-align: center;
+            border-radius: 3px;
+            border: 1px solid #ff567d;
+            padding: .8em 1.2em;
+            max-width: 100%;
+            color: #ff567d;
+            background-color: #fafafa;
+        }
+
+        .b3_b1 {
+            width: 8%;
+            height: 60%;
+            margin: 0px 10px 0px 0px;
+            float: left;
+            background-color: white;
+            text-align: center;
+        }
+
+        .b3_b2 {
+            width: 36%;
+            height: 60%;
+            margin: 0px 15px 0px 15px;
+            float: left;
+            background-color: white;
+            text-align: center;
+        }
+
+        .b3_b3 {
+            width: 36%;
+            height: 60%;
+            margin: 0px 15px 0px 10px;
+            float: left;
+            ;
+            background-color: white;
+            text-align: center;
+        }
+
+        .b3_b4 {
+            width: 8%;
+            height: 60%;
+            margin: 0px 0px 0px 10px;
+            float: right;
+            background-color: white;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .img_arrow {
+            width: 100%;
+            margin-top: 100%;
+        }
+
+        .img_b3_cont {
+            width: 100%;
+            height: 50%;
+        }
+
+        .b3_p {
+            padding: 0 15px 0 15px;
+            font-size: 12px;
+            line-height: 1;
+            color: gray;
+        }
+
+        a {
+            color: red;
+            font-size: 16px;
+        }
+
+        .box3_img_center {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            transform: translate(50%, -150%);
+        }
+
+        .text_input {
+            padding: 20px 0 20px 50px;
+            width: 50%;
+            color: grey;
+            margin: 5px;
+        }
+
+        .div_date {
+            width: 48%;
+            float: left;
+        }
+        .text_date1 {
+            padding: 0px 0 00px 50px;
+            width: 100%;
+            color: grey;
+            
+        }
+
+        .text_date2 {
+            width: 50%;
+            color: grey;
+        }
+
+        .text_day {
+            color: black;
+            padding: 0px 0px 0px 50px;
+        }
+
+        .p_date {
+            font-size: 15px;
+        }
+
+        .span_day {
+            color: gray;
+        }
+        .verticle_line{
+            margin: 10px 0 10px 0;
+            border-left: 1px solid lightgray;
+            height: 80%;
+            float: left;
+        }
+        .selection{
+            width: 60%;
+            float: left;
+        }
+        .buttonSearch{
+            width: 38%;            
+            background-color: blue;            
+            float: right;
+             height: 50px; 
+            border-radius:4px; 
+            text-align: center;
+            vertical-align: middle;
+            padding-top:25px;             
+        }
+        .text_person {
+            padding: 0px 0 00px 50px;
+            width: 100%;
+            color: grey;
+            font-size: 15px;
+        }
+        hr{
+            width: 100px;
+            color: #0283df;
+            float: left;
+            margin: 0 0 0 1%;            
+            border-width: 2px;
+            position: relative;
+            bottom: -10px;  
+        }        
+        .bottomimage{
+            width: 50%;
+            position: relative;
+            top: -170px;
+            left: 0px;
+        }
+        .clearmargin{
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <header>This is header section</header> -->
+<div class="divmain">
+    <div class="divchild">
+        <div class="section1">
+            <h1>HOTELS, RESORTS, HOSTELS & MORE</h1>
+            <p class="clearmargin">  Get the best prices on 2,000,000+ properties, worldwide</p>
+            <br />
+            <p class="clearmargin"> <span>All Rooms</span>
+            <span>agoda homes</span></p>
+             <hr  />   
+             <br>
+            <div class="divInput ">
+                <p class="text_input">Enter a destination or property</p>
+                <!-- <input type="radio" placeholder="Enter a destination or property" class="text_input"> -->
+            </div><br />
+            <div class="divInput">
+                <div class="div_date clearmargin">
+                    <div class="text_date1">
+                        <p class="p_date">29 Nov 2018<br> <span class="span_day">Thrusday</span></p>
+                    </div>
+                </div>
+                <div class="verticle_line"></div>
+                <div class="div_date">
+                        <div class="text_date1">
+                                <p class="p_date">30 Nov 2018<br> <span class="span_day">Thrusday</span></p>
+                            </div>
+                </div>
+            </div><br />
+            <div><div class="divInput selection">
+                    <p class="text_person">2 adults, 1 child <br>2 rooms</p>
+            </div>
+            <div class="buttonSearch">SEARCH</div> <br />            
+        </div>
+            
+        </div>
+    </div>
+    <div class="divchild">
+        <div class="section2">
+            <p class="clearmargin"> <span>What's new</span>
+                <span>Explore</span></p>
+
+                <hr />
+        <br/>
+            <div class="box1">
+                <div class="box1h1"><span>SAVE AN EXTRA</span></div>
+                <div class="div_largetext">10%</div>
+                <h3>on select destinations</h3>
+                <p class="p_title">Our best price are even lower<br> updated every day !</p>
+                <button class="Tile_button"> VIEW TODAY DEALS </button>
+            </div>
+            <div class="box2">
+                <img src="https://cdn6.agoda.net/images/MVC/default/background_image/NHA_480x160px.jpg" srcset="https://cdn6.agoda.net/images/MVC/default/background_image/NHA_480x160px.jpg, https://cdn6.agoda.net/images/MVC/default/background_image/NHA_480x160px@2x.jpg 2x"
+                    class="Tile__image">
+                <h2 class="h2_box2">BECOME A HOST</h2>
+                <p>List your place on agoda homes.<br> pay no commission or fee ever.</p>
+                <button class="Tile_button1"> LIST YOUR PLACE TODAY </button>
+            </div>
+            <div class="box3">
+                <h2 class="h2_box3">TODAY'S TOP DEALS</h2>
+
+                <div class="b3_b1"><img src="images/left_arrow.png" class="img_arrow"></div>
+                <div class="b3_b2">
+                    <img class="img_b3_cont" src="https://pix6.agoda.net/city/16808/16808-16x9.jpg?s=358x&amp;p=true&amp;cachebuster=true">
+                    <div class="box3_img_center">10% OFF</div>
+                    <p class="b3_p">Get an additional 10% discount on top of great deals in Hong Kong</p>
+                    <a>Expires tomorrow!</a>
+                </div>
+                <div class="b3_b3"><img class="img_b3_cont" src="https://pix6.agoda.net/city/14524/14524-16x9.jpg?s=358x&amp;p=true&amp;cachebuster=true">
+                    <div class="box3_img_center">8% OFF</div>
+                    <p class="b3_p">Get 8% off your accommodations in Kuala Lumpur now</p>
+                    <a>Expires in 1 week!</a>
+                </div>
+                <div class="b3_b4">
+                    <img src="images/right_arrow.png" class="img_arrow">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="https://cdn6.agoda.net/images/MVC/default/background_image/illustrations/skyline.png" class="bottomimage">
+</div>
+</body>
+
+</html>

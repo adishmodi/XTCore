@@ -12,7 +12,6 @@ console.log(stockstatus);
 
 
 ///comparsional operator
-
 var a =40;
 var b=450;
 
@@ -23,3 +22,4 @@ if (isBig){
 else{
     console.log('B is Big');
 }
+
